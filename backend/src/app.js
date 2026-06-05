@@ -10,7 +10,9 @@ app.use(cookieParser());
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://ai-interview-prep-ebon.vercel.app"  // tera exact Vercel URL
+    "http://localhost:3000",
+    "https://ai-interview-prep-9hspdcbjk-ankit-webtechs-projects.vercel.app",
+    "https://ai-interview-prep-ebon.vercel.app"
   ],
   credentials: true
 }));
