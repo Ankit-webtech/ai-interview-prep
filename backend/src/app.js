@@ -8,8 +8,11 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin: "http://localhost:5173",
-    credentials: true,
+  origin: [
+    "http://localhost:5173",
+    "https://ai-interview-prep-ebon.vercel.app"  // tera exact Vercel URL
+  ],
+  credentials: true
 }));
 
 //// require all routes here
